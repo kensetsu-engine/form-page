@@ -32,7 +32,7 @@
 
         if (email) {
             // GAS にクリック記録を送信
-            fetch("https://script.google.com/macros/s/AKfycbysnyEGtErShx92NTe3lfwtrglup_-xMExhuHmDs4EobPFRsbm-MStnzWdoGtPShhj8/exec?action=click&email=" + encodeURIComponent(email) + "&source=form")
+            fetch("https://script.google.com/macros/s/AKfycbyr3tViEondtHjVlql8uEssssbmXljerruwQNuFr2ha1j__8RvvHJuHc6kHgyvgxI_3/exec?action=click&email=" + encodeURIComponent(email) + "&referrer=form-page")
                 .then(() => {
                     // 記録が終わったらGoogleフォームにリダイレクト
                     window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfcxeFwzVN_X3eCyxhJvWgZ4SjsAnhUOcdbX5-HgJF6K5ONtw/viewform?usp=header";
